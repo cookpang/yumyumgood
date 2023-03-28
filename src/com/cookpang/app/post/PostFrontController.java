@@ -20,11 +20,12 @@ public class PostFrontController extends HttpServlet{
 	}
 	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String target = req.getRequestURI().substring(req.getContextPath().length());
+		System.out.println(target);
+		System.out.println("프론트 컨트롤러 잘 탄당!!");
 
 		switch(target) {
 		
 		}
-	System.out.println(target);
 	}
 
 }
